@@ -17,6 +17,13 @@ def print_statistics(filename: str):
             content = f.read()
     except FileNotFoundError:
         print(f"File '{filename}' not found!")
+    
+    print_word_count(content)
+
+
+def print_word_count(content: str):
+    word_count = len(content.split())
+    print(f"The document contains a total of {word_count} words.")
 
 
 if __name__ == "__main__":
