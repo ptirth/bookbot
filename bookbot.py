@@ -18,7 +18,7 @@ def print_statistics(filename: str):
             content = f.read()
     except FileNotFoundError:
         print(f"File '{filename}' not found!")
-    
+
     print_word_count(content)
     print_alphabets_count(content)
 
